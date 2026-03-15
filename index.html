@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Akash — AI & Data Science engineering student building intelligent solutions at the intersection of web development and machine learning.">
+<meta name="author" content="Akash">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Akash — AI & Data Science Portfolio">
+<meta property="og:description" content="Building intelligent solutions at the intersection of web development and machine learning.">
+<meta property="og:url" content="https://akash.dev">
+<meta property="og:image" content="images/og-preview.jpg">
+
+<title>Akash — AI & Data Science</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=Sora:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" role="status" aria-live="polite" aria-label="Loading portfolio">
+  <svg class="pre-svg" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <text class="a-letter" x="6" y="138">A</text>
+  </svg>
+  <p class="pre-label">Loading portfolio</p>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <a href="#hero" class="logo"><span>A</span>kash</a>
+  <nav aria-label="Primary navigation">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Introduction">
+  <div class="hero-left">
+    <div class="hero-tag">AI &amp; Data Science Student</div>
+    <h1 class="hero-name"><span class="big-a">A</span>kash</h1>
+    <p class="hero-role">Web Developer &amp; ML Explorer</p>
+    <p class="hero-desc">Building intelligent solutions at the intersection of web development and machine learning. I don't just study concepts — I build with them.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">View Work</a>
+      <a href="#contact" class="btn btn-outline">Say Hello</a>
+    </div>
+  </div>
+
+  <!-- MIND MAP — canvas draws everything -->
+  <div class="hero-right">
+    <canvas id="mm-canvas" aria-hidden="true"></canvas>
+    <!-- Text alternative for the canvas mind map (visually hidden, read by screen readers) -->
+    <div class="sr-only">Interactive mind map with links to: About, Skills, Projects, Services, and Contact sections.</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-label="About me">
+  <div class="bg-word">ABOUT</div>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img-box"><img src="images/PHOTO.jpg" alt="Portrait of Akash" loading="lazy"></div>
+        <div class="about-badge">AI &amp; DS Engineer</div>
+      </div>
+      <div class="about-text">
+        <div class="sec-badge">Who I Am</div>
+        <h2>Building at the Edge of Web &amp; Intelligence</h2>
+        <p>I'm an AI &amp; Data Science engineering student who believes great technology starts with strong fundamentals. My focus lies at the intersection of web development and artificial intelligence — building responsive, user-first interfaces while developing a deeper understanding of machine learning and automation systems.</p>
+        <p>I approach every project as an opportunity to learn something new. From deploying full-stack applications to experimenting with real-world data pipelines, I'm committed to consistent, hands-on growth. I don't just study concepts — I build with them.</p>
+        <div class="about-stats">
+          <div class="stat"><strong>4+</strong><span>Projects Built</span></div>
+          <div class="stat"><strong>2+</strong><span>Years Learning</span></div>
+          <div class="stat"><strong>∞</strong><span>Curiosity</span></div>
+        </div>
+        <a href="resume.pdf" download class="btn btn-primary">Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" aria-label="Technical skills">
+  <div class="container">
+    <div class="sec-badge">Capabilities</div>
+    <h2 class="sec-title">What I Work With</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-head"><h3>Web Development</h3></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">HTML &amp; CSS</span><span class="sk-tag adv">Advanced</span></div><div class="sk-bar-bg"><div class="sk-bar adv" data-w="92"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">JavaScript</span><span class="sk-tag mid">Intermediate</span></div><div class="sk-bar-bg"><div class="sk-bar mid" data-w="75"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">React</span><span class="sk-tag new_">Learning</span></div><div class="sk-bar-bg"><div class="sk-bar new_" data-w="35"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">Django</span><span class="sk-tag mid">Intermediate</span></div><div class="sk-bar-bg"><div class="sk-bar mid" data-w="65"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">Flask</span><span class="sk-tag mid">Intermediate</span></div><div class="sk-bar-bg"><div class="sk-bar mid" data-w="60"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">MySQL</span><span class="sk-tag adv">Advanced</span></div><div class="sk-bar-bg"><div class="sk-bar adv" data-w="85"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">MongoDB</span><span class="sk-tag mid">Intermediate</span></div><div class="sk-bar-bg"><div class="sk-bar mid" data-w="65"></div></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-head"><h3>AI &amp; Data Science</h3><span>/ Machine Learning</span></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">Python</span><span class="sk-tag mid">Intermediate</span></div><div class="sk-bar-bg"><div class="sk-bar mid" data-w="70"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">Machine Learning</span><span class="sk-tag new_">Learning</span></div><div class="sk-bar-bg"><div class="sk-bar new_" data-w="42"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">Data Analysis</span><span class="sk-tag mid">Intermediate</span></div><div class="sk-bar-bg"><div class="sk-bar mid" data-w="65"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">NumPy &amp; Pandas</span><span class="sk-tag mid">Intermediate</span></div><div class="sk-bar-bg"><div class="sk-bar mid" data-w="62"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">SQL</span><span class="sk-tag mid">Intermediate</span></div><div class="sk-bar-bg"><div class="sk-bar mid" data-w="60"></div></div></div>
+        <div class="skill-row"><div class="skill-meta"><span class="sk-name">Model Deployment</span><span class="sk-tag new_">Learning</span></div><div class="sk-bar-bg"><div class="sk-bar new_" data-w="28"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" aria-label="Featured projects">
+  <div class="container">
+    <div class="sec-badge">Work</div>
+    <h2 class="sec-title">Featured Projects</h2>
+    <div class="projects-grid">
+      <article class="proj-card">
+        <div class="proj-num">Project — 01</div>
+        <h3>RoleAI</h3>
+        <p>AI-powered full-stack app that uses role-based prompt engineering to generate and compare responses tailored for different audiences (CEO, Engineer, Student) simultaneously.</p>
+        <div class="tech-tags"><span class="tech-tag">HTML/CSS/JS</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Python</span><span class="tech-tag">Groq LLM</span></div>
+        <div class="proj-links"><a href="https://role-ai-seven.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-link">Live Demo <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8L8 2M8 2H4M8 2V6"/></svg></a><a href="https://github.com/Akashkbsa/RoleAI/tree/v1-roleai" target="_blank" rel="noopener noreferrer" class="proj-link">GitHub <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8L8 2M8 2H4M8 2V6"/></svg></a></div>
+      </article>
+      <article class="proj-card">
+        <div class="proj-num">Project — 02</div>
+        <h3>DataPulse Dashboard</h3>
+        <p>Real-time analytics dashboard that visualises CSV datasets interactively. Features drag-and-drop upload, dynamic chart generation, and one-click export to PDF.</p>
+        <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">D3.js</span><span class="tech-tag">Python</span><span class="tech-tag">Flask</span></div>
+        <div class="proj-links"><a href="#" class="proj-link">Live Demo <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8L8 2M8 2H4M8 2V6"/></svg></a><a href="#" class="proj-link">GitHub <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8L8 2M8 2H4M8 2V6"/></svg></a></div>
+      </article>
+      <article class="proj-card">
+        <div class="proj-num">Project — 03</div>
+        <h3>Student Performance Predictor</h3>
+        <p>ML model that predicts student exam scores based on study habits, attendance, and demographics using ensemble methods and cross-validation for robust accuracy.</p>
+        <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Matplotlib</span></div>
+        <div class="proj-links"><a href="#" class="proj-link">Live Demo <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8L8 2M8 2H4M8 2V6"/></svg></a><a href="#" class="proj-link">GitHub <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8L8 2M8 2H4M8 2V6"/></svg></a></div>
+      </article>
+      <article class="proj-card">
+        <div class="proj-num">Project — 04</div>
+        <h3>NeuralWeather</h3>
+        <p>A machine learning-powered weather prediction app that combines real-time API data with a trained regression model to forecast temperature and precipitation with 87% accuracy.</p>
+        <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">React</span><span class="tech-tag">FastAPI</span></div>
+        <div class="proj-links"><a href="#" class="proj-link">Live Demo <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8L8 2M8 2H4M8 2V6"/></svg></a><a href="#" class="proj-link">GitHub <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8L8 2M8 2H4M8 2V6"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" aria-label="Services offered">
+  <div class="container">
+    <div class="sec-badge">Offerings</div>
+    <h2 class="sec-title">What I Can Build For You</h2>
+    <p class="sec-sub">Helping individuals and small businesses establish a strong, smart digital presence.</p>
+    <div class="services-grid">
+      <article class="svc-card"><span class="svc-num">01 —</span><span class="svc-icon">💻</span><h3>Responsive Website Development</h3><p>Custom-built websites that look and perform flawlessly across all devices.</p><a href="#contact" class="svc-cta">Get Started →</a></article>
+      <article class="svc-card"><span class="svc-num">02 —</span><span class="svc-icon">🎯</span><h3>Landing Page Design</h3><p>High-converting landing pages designed to capture attention and drive action.</p><a href="#contact" class="svc-cta">Get Started →</a></article>
+      <article class="svc-card"><span class="svc-num">03 —</span><span class="svc-icon">🧑‍💼</span><h3>Portfolio Website Creation</h3><p>Professional portfolio sites that showcase your work and personality.</p><a href="#contact" class="svc-cta">Get Started →</a></article>
+      <article class="svc-card"><span class="svc-num">04 —</span><span class="svc-icon">🚀</span><h3>Website Deployment Support</h3><p>End-to-end deployment assistance from domain setup to hosting configuration.</p><a href="#contact" class="svc-cta">Get Started →</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact form">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="sec-badge">Contact</div>
+        <h2 class="sec-title">Let's Build<br>Something.</h2>
+        <p>Have a project in mind or just want to connect? I'm always open to interesting ideas and new collaborations.</p>
+        <div class="contact-details">
+          <div class="cd-item"><span class="cd-label">Location</span><span class="cd-value">India</span></div>
+          <div class="cd-item"><span class="cd-label">Avail.</span><span class="cd-value">Open to freelance projects</span></div>
+          <div class="cd-item"><span class="cd-label">Email</span><span class="cd-value">akashkbsa01@email.com</span></div>
+        </div>
+      </div>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+        <!-- Replace YOUR_ACCESS_KEY_HERE with your Web3Forms access key -->
+        <input type="hidden" name="access_key" value="a4edee34-6fbb-4bc9-9653-1d9c3aff3639">
+
+        <div class="form-row">
+          <div class="fg"><label for="c-name">Name <span class="required" aria-hidden="true">*</span></label><input type="text" name="name" id="c-name" placeholder="Your full name" autocomplete="name" required aria-required="true"></div>
+          <div class="fg"><label for="c-email">Email <span class="required" aria-hidden="true">*</span></label><input type="email" name="email" id="c-email" placeholder="you@example.com" autocomplete="email" required aria-required="true"></div>
+        </div>
+        <div class="fg"><label for="c-subject">Subject</label><input type="text" name="subject" id="c-subject" placeholder="What's this about?"></div>
+        <div class="fg"><label for="c-msg">Message <span class="required" aria-hidden="true">*</span></label><textarea name="message" id="c-msg" rows="5" placeholder="Tell me about your project or idea..." required aria-required="true"></textarea></div>
+        
+        <!-- Web3Forms Anti-spam honeypot -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+        <!-- Redirect prevention (if JS fails) -->
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+        <div><button type="submit" class="btn btn-primary" id="contact-submit">Send Message</button></div>
+        <p id="contact-status" style="margin-top: 15px; font-size: 0.9rem; color: var(--accent); display: none;"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+</main>
+
+<footer id="footer">
+  <div class="footer-logo">Akash</div>
+  <nav class="social-links">
+    <a href="https://github.com/Akashkbsa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/akashk06" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://x.com/Akash_K_01" target="_blank" rel="noopener noreferrer">Twitter</a>
+  </nav>
+  <p class="footer-copy">© 2026 Akash. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
